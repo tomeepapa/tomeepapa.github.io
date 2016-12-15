@@ -39,7 +39,7 @@ app.controller("mainCtr", ['$scope', '$http', '$routeParams', 'nameService', fun
     $scope.cName = nameService.cName;
     $scope.days = $routeParams.days;
     $scope.getwWeatherAPI = function () {
-        $http({ method: 'GET', url: "https://api.openweathermap.org/data/2.5/forecast/daily?APPID=b1c4146ea71e502e68bb1ff5c34ba5fa&units=metric" , 
+        $http({ method: 'GET', url: "http://api.openweathermap.org/data/2.5/forecast/daily?APPID=b1c4146ea71e502e68bb1ff5c34ba5fa&units=metric" , 
             params: {
                 q: $scope.cName,
                 cnt: $scope.days
