@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div class="col-md-6 col-md-offset-3">
+        <h4>Varosonkenti idojaras</h4>
+        <div class="form-group">
+            <input type="text" ng-model="cName" class="form-control" />
+            Napok: <a href="#/2" ng-class="{'bg-primary' : days ==='2'}">2</a> | <a href="#/3" ng-class="{'bg-primary' : days ==='3'}">3</a>| <a href="#/5" ng-class="{'bg-primary' : days ==='5'}">5</a>| <a href="#/7 ng-class="{'bg-primary' : days ==='7'}">7</a>
+        </div>
+        <button ng-click="getwWeatherAPI()" class="btn btn-primary">Milyen ido lesz? </button>
+    </div>
+    <div class="col-md-6 col-md-offset-3">
+        <h4>Elorejelzes {{cName}}</h4>
+<div ng-repeat="x in weatherResult.list">
+        <ul class="list-unstyled">
+            <div class="panel-heading panel-default">
+ <li class="panel-heading">{{convertToDate(x.dt) | date: 'yyyy-MM-dd'}}</li>
+                <link class="panel-dody" />Nappali homerseklet: {{x.temp.day}} fok | min. homerseklet: {{x.temp.min}} fok</li>
+        </ul>
+        </div>
+    </div>
+    </div>
+
+</div>
+
+    </div>
+
+</body>
+</html>

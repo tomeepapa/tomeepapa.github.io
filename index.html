@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="weatherApp">
+<head>
+	<meta charset="UTF-8">
+	<script src="angular.js"></script>
+	<script src="angular-route.js"></script>
+    <script src="angular-resource.min.js"></script>
+	<script src="app.js"></script>
+	<script src="jquery-3.1.1.slim.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.css" />
+    <style>html, body,input,select,textarea{font-size: 1.05em !important;}</style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#/">Weather app</a>
+            </div>
+            <br />
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#/"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#/fcast"><i class="fa fa-home"></i>Előrejelzés</a></li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+<div class="container">
+
+
+
+	<div ng-view>
+
+	</div>
+
+</div>
+
+
+</body>
+</html>
