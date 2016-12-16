@@ -3,6 +3,7 @@
 <html ng-app="weatherApp">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<script src="angular.js"></script>
 	<script src="angular-route.js"></script>
     <script src="angular-resource.min.js"></script>
@@ -14,27 +15,41 @@
 
 </head>
 
-<body>
-    <header>
-        <nav class="navbar navbar-default">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#/">Weather app</a>
-            </div>
-            <br />
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#/"><i class="fa fa-home"></i>Home</a></li>
-                <li><a href="#/fcast"><i class="fa fa-home"></i>Előrejelzés</a></li>
+<body style="background-image: url(winter_w.jpg); background-position: center; background-attachment:fixed;background-repeat: no-repeat;">
 
-            </ul>
+    <header>
+
+        <!-- xxx -->
+        <nav class="nav navbar-inverse">
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#/" class="navbar-brand">IDŐJÁRÁS</a>
+                </div>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#/">Home</a></li>
+                        <li><a href=#/">Valami</a></li>
+                    </ul>
+                </div>
+
+            </div>
 
         </nav>
+        <!-- xxx -->
+
     </header>
 
-<div class="container">
+<div class="container" class="back">
 
 
 
-	<div ng-view>
+	<div ng-view >
 
 	</div>
 
